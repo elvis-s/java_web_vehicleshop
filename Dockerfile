@@ -14,4 +14,4 @@ COPY --from=build /app/target/final-exam-0.0.1-SNAPSHOT.jar final-exam.jar
 
 EXPOSE 8080 
 
-ENTRYPOINT ["java", "jar", "final-exam.jar"]
+ENTRYPOINT ["java", "-jar", "final-exam.jar"]
