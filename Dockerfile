@@ -1,4 +1,4 @@
-FROM maven:3.8.4-openjdk-17 AS build
+FROM maven:3.8.3-openjdk-17 AS build
 
 WORKDIR /app
 
@@ -10,7 +10,7 @@ FROM openjdk:17-jdk
 
 WORKDIR /app
 
-COPY --from=build /app/target/final-exam.0.0.1-SNAPSHOT.jar final-exam.jar 
+COPY --from=build /app/target/final-exam-0.0.1-SNAPSHOT.jar final-exam.jar 
 
 EXPOSE 8080 
 
